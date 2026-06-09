@@ -17,7 +17,7 @@
     handbrake
     localsend
     vlc
-    openasar
+    discord
   ];
 
   # GTK Prefer Dark
