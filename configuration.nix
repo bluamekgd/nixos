@@ -90,7 +90,7 @@
     source-serif
     source-code-pro
     corefonts
-    vistafonts
+    vista-fonts
     cantarell-fonts
     ubuntu_font_family
     freefont_ttf
