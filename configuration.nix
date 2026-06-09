@@ -55,6 +55,9 @@
   # zsh
   programs.zsh.enable = true;
 
+  # Nix experimental features
+  nix.settings.experimental-features = ["nix-command" "flakes"];
+
   # System packages
   nixpkgs.config.allowUnfree = true;
 
