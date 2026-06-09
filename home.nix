@@ -134,7 +134,7 @@
 
       # Removing "The Devil's Absolute Nightmare"
       input = {
-        "type:pointer" = {
+        "*" = {
           accel_profile = "flat";
           # "The Devil's Absolute Nightmare" Removed, Yay!!!!!!
 
