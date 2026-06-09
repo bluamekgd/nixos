@@ -92,8 +92,8 @@
     corefonts
     vista-fonts
     cantarell-fonts
-    ubuntu_font_family
     freefont_ttf
+    ubuntu-classic
     dejavu_fonts
     liberation_ttf
 
