@@ -17,10 +17,7 @@
     }
   ";
 
-  # Compile everything from scratch
-  # Don't trust pre-compiled binaries
-  # (I am going insane)
-  nix.settings.substituters = [];
+  # Maybe not
 
   # MakeMKV fix
   boot.kernelModules = ["sg"];
