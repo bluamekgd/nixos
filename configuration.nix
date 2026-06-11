@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  config,
+  pkgs,
+  ...
+}: {
   imports = [./hardware-configuration.nix];
 
   # Bootloader
@@ -29,6 +33,19 @@
   # Networking
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
+
+  # Tailscale (WireGuard for idiots)
+  services.tailscale = {
+    enable = true;
+    useRoutingFeatures = "client";
+  };
+
+  # Firewall
+  networking.firewall = {
+    trustedInterfaces = [config.services.tailscale.interfaceName];
+    allowedUDPPorts = [config.services.tailscale.port];
+    checkReversePath = "loose";
+  };
 
   # Locale / time
   time.timeZone = "Europe/Warsaw";
