@@ -153,7 +153,7 @@
       # Waybar and background
       startup = [
         {command = "waybar";}
-        {command = "swaybg -o eDP-1 -i /etc/nixos/resources/swaybg.png -m fill";}
+        {command = "swaybg -o eDP-1 -i /etc/nixos/resources/swaybg.png -m center";}
         # The best solution to a problem is usually the easiest. -Ellen McLain (GLaDOS), 2011
         {command = "swaymsg workspace number 1";}
       ];
