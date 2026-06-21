@@ -170,6 +170,13 @@
       in {
         # ------------------ Keybinds ------------------
 
+        # ------ System ------
+        "${mod}+F11" = "exec brightnessctl set 5%-";
+        "${mod}+F12" = "exec brightnessctl set 5%+";
+        "${mod}+F1" = "exec wpctl set-mute @DEFAULT_SINK@ toggle";
+        "${mod}+F2" = "exec wpctl set-volume @DEFAULT_SINK@ 5%-";
+        "${mod}+F3" = "exec wpctl set-volume @DEFAULT_SINK@ 5%+";
+
         # ------ Apps ------
 
         "${mod}+Return" = "exec ${terminal}";
