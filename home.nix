@@ -18,6 +18,7 @@
     localsend
     vlc
     discord
+    android-tools
   ];
 
   # GTK Prefer Dark
