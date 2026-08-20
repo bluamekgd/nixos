@@ -68,17 +68,9 @@
     x11.enable = true;
   };
 
-  # Niri (todo: remove validate shit when im finished since its ugly lol)
+  # Niri (todo: done ig)
   home.file.".config/niri/config.kdl" = {
-    source =
-      pkgs.runCommand "niri-config-checked"
-      {
-        nativeBuildInputs = [pkgs.niri];
-      }
-      ''
-        niri validate --config ${./config.kdl}
-        cp ${./config.kdl} $out
-      '';
+    source = ./resources/niri/config.kdl;
     recursive = true;
   };
 
