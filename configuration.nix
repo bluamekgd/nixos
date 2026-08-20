@@ -151,7 +151,7 @@
     settings = {
       # Animation
       animation = "dur_file";
-      dur_file_path = "/etc/nixos/resources/ly.dur";
+      dur_file_path = "./resources/ly.dur";
       dur_x_offset = 55;
       dur_y_offset = -5;
       animation_timeout_sec = 0;
