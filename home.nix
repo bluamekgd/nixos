@@ -61,11 +61,25 @@
 
   # Cursor
   home.pointerCursor = {
+    enable = true;
     name = "Bibata-Modern-Classic";
     package = pkgs.bibata-cursors;
     size = 20;
     gtk.enable = true;
     x11.enable = true;
+  };
+
+  # Git pre-commit Nix syntax check
+  home.file.".git/hooks/pre-commit" = {
+    executable = true;
+    text = ''
+    #!/usr/bin/env bash
+    set -e
+    if find . -name "*.nix" -print -quit | grep -q .; then
+      echo "running nix syntax check"
+      find . -name "*.nix" -exec ${pkgs.nix}/bin/nix-instantiate --parse {} + > /dev/null
+      echo "nix syntax ok"
+    fi
   };
 
   # Niri (todo: done ig)
