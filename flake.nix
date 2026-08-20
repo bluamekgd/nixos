@@ -15,14 +15,14 @@
   }: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
-      specialArgs = {};
+      specialArgs = { inherit inputs; };
       modules = [
         ./configuration.nix
         home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.extraSpecialArgs = {};
+          home-manager.extraSpecialArgs = { inherit inputs; };
           home-manager.users.bartek = import ./home.nix;
         }
       ];
