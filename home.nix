@@ -81,7 +81,7 @@
       echo "running nix syntax check"
       find . -name "*.nix" -exec ${pkgs.nix}/bin/nix-instantiate --parse {} + > /dev/null
       echo "nix syntax ok"
-    fi
+    fi''
   };
 
   # Niri (todo: done ig)
