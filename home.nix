@@ -36,8 +36,8 @@
     gtk4.theme = config.gtk.theme;
 
     theme = {
-      name = "Gruvbox-Dark-B";
-      package = pkgs.gruvbox-gtk-theme;
+      name = "Gruvbox-Dark";
+      package = pkgs.gruvbox-dark-gtk;
     };
 
     iconTheme = {
@@ -55,9 +55,9 @@
   };
 
   # Libadwaita hell
-  xdg.configFile."gtk-4.0/assets".source = "${pkgs.gruvbox-gtk-theme}/share/themes/Gruvbox-Dark-B/gtk-4.0/assets";
-  xdg.configFile."gtk-4.0/gtk.css".source = "${pkgs.gruvbox-gtk-theme}/share/themes/Gruvbox-Dark-B/gtk-4.0/gtk.css";
-  xdg.configFile."gtk-4.0/gtk-dark.css".source = "${pkgs.gruvbox-gtk-theme}/share/themes/Gruvbox-Dark-B/gtk-4.0/gtk-dark.css";
+  xdg.configFile."gtk-4.0/assets".source = "${pkgs.gruvbox-gtk-theme}/share/themes/Gruvbox-Dark/gtk-4.0/assets";
+  xdg.configFile."gtk-4.0/gtk.css".source = "${pkgs.gruvbox-gtk-theme}/share/themes/Gruvbox-Dark/gtk-4.0/gtk.css";
+  xdg.configFile."gtk-4.0/gtk-dark.css".source = "${pkgs.gruvbox-gtk-theme}/share/themes/Gruvbox-Dark/gtk-4.0/gtk-dark.css";
 
   # Cursor
   home.pointerCursor = {
