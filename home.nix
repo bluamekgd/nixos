@@ -55,7 +55,7 @@
   };
 
   # Libadwaita hell
-  xdg.configFile."gtk-4.0/assets".source = "${pkgs.gruvbox--dark-gtk}/share/themes/Gruvbox-Dark/gtk-4.0/assets";
+  xdg.configFile."gtk-4.0/assets".source = "${pkgs.gruvbox-dark-gtk}/share/themes/Gruvbox-Dark/gtk-4.0/assets";
   xdg.configFile."gtk-4.0/gtk.css".source = "${pkgs.gruvbox-dark-gtk}/share/themes/Gruvbox-Dark/gtk-4.0/gtk.css";
   xdg.configFile."gtk-4.0/gtk-dark.css".source = "${pkgs.gruvbox-dark-gtk}/share/themes/Gruvbox-Dark/gtk-4.0/gtk-dark.css";
 
