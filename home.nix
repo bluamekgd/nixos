@@ -18,7 +18,9 @@
     localsend
     vlc
     discord
-    android-tools
+
+    # Larping Tools
+    fastfetch
   ];
 
   # GTK Prefer Dark
