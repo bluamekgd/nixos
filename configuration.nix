@@ -64,7 +64,7 @@
   # Gnome keyring cuz sway nixos guide says so
   services.gnome.gnome-keyring.enable = true;
 
-  # XDG Portal (like the game? (i choked a sub-20 speedrun so bad bro))
+  # XDG Portal (like the game? (I DID A 10:00.7 IN OOB BRO I HATE THIS GAME))
   xdg.portal = {
     enable = true;
     extraPortals = [pkgs.xdg-desktop-portal-gtk];
@@ -79,7 +79,6 @@
 
   # System packages
   nixpkgs.config.allowUnfree = true;
-
   environment.systemPackages = with pkgs; [
     git
     wget
@@ -134,20 +133,17 @@
     pulse.enable = true;
   };
 
-  # SwayWM
-  programs.sway = {
+  # Niri
+  programs.niri = {
     enable = true;
     wrapperFeatures.gtk = true;
     extraPackages = with pkgs; [
-      swaylock
-      swayidle
-      swaybg
-      waybar
+      awww
+      quickshell
       fuzzel
       wl-clipboard
       grim
       slurp
-      mako
     ];
   };
 

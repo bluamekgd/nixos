@@ -107,3 +107,5 @@ PROMPT2="$(/etc/profiles/per-user/bartek/bin/starship prompt --continuation)"
 alias img='kitten icat'
 alias cat='bat'
 alias unicode='kitten unicode-input'
+alias nrs='sudo nixos-rebuild switch --flake .#nixos'
+alias nrb='sudo nixos-rebuild boot --flake .#nixos'
