@@ -136,16 +136,17 @@
   # Niri
   programs.niri = {
     enable = true;
-    wrapperFeatures.gtk = true;
-    extraPackages = with pkgs; [
-      awww
-      quickshell
-      fuzzel
-      wl-clipboard
-      grim
-      slurp
-    ];
+    useNautilus = true;
   };
+
+  niri.packages = with pkgs; [
+    awww
+    quickshell
+    fuzzel
+    wl-clipboard
+    grim
+    slurp
+  ];
 
   # Ly DM
   services.displayManager.ly = {
