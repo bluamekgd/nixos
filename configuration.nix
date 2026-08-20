@@ -92,6 +92,12 @@
     playerctl
     libxcursor
     xwayland
+    awww
+    quickshell
+    fuzzel
+    wl-clipboard
+    grim
+    slurp
   ];
 
   # Fonts
@@ -138,15 +144,6 @@
     enable = true;
     useNautilus = true;
   };
-
-  niri.packages = with pkgs; [
-    awww
-    quickshell
-    fuzzel
-    wl-clipboard
-    grim
-    slurp
-  ];
 
   # Ly DM
   services.displayManager.ly = {
