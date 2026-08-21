@@ -10,7 +10,7 @@
     kitty
     samba
     nautilus
-    floorp-bin
+    firefox
     jellyfin-desktop
     bat
     makemkv
