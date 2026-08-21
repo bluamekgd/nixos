@@ -90,6 +90,11 @@
     recursive = true;
   };
 
+  # awww
+  home.file.".awww.png" = {
+    source = ./resources/awww.png;
+  };
+
   # Terminal
   home.file.".config/kitty" = {
     source = ./resources/kitty;
