@@ -1,4 +1,5 @@
 {
+  inputs,
   config,
   pkgs,
   ...
@@ -71,18 +72,6 @@
     x11.enable = true;
   };
 
-  # Git pre-commit Nix syntax check
-  home.file.".git/hooks/pre-commit" = {
-    executable = true;
-    text = ''
-    #!/usr/bin/env bash
-    set -e
-    if find . -name "*.nix" -print -quit | grep -q .; then
-      echo "running nix syntax check"
-      find . -name "*.nix" -exec ${pkgs.nix}/bin/nix-instantiate --parse {} + > /dev/null
-      echo "nix syntax ok"
-    fi'';
-  };
 
   # Niri (todo: done ig)
   home.file.".config/niri/config.kdl" = {
@@ -90,9 +79,9 @@
     recursive = true;
   };
 
-  # awww
-  home.file.".awww.png" = {
-    source = ./resources/awww.png;
+  # awww wallpapers
+  home.file.".config/niri/awww.jpg" = {
+    source = ./resources/awww.jpg;
   };
 
   # Terminal

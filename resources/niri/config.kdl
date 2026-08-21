@@ -110,7 +110,7 @@ layout {
 
 spawn-at-startup "quickshell"
 spawn-at-startup "awww-daemon"
-spawn-at-startup "awww" "img" "~/.awww.png"
+spawn-at-startup "awww" "img" "~/.config/niri/awww.jpg" "-t" "random" "--transition-fps" "60"
 
 hotkey-overlay {
     skip-at-startup
