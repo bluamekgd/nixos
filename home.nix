@@ -81,7 +81,7 @@
 
   # awww wallpapers
   home.file.".config/niri/awww.jpg" = {
-    source = ./resources/awww.jpg;
+    source = ./resources/niri/awww.jpg;
   };
 
   # Terminal
