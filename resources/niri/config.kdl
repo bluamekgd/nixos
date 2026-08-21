@@ -109,8 +109,8 @@ layout {
 }
 
 spawn-at-startup "quickshell"
-spawn-at-startup "sh -c sleep 2 && awww-daemon"
-spawn-at-startup "awww img ~/.awww.png"
+spawn-at-startup "awww-daemon"
+spawn-at-startup "awww" "img" "~/.awww.png"
 
 hotkey-overlay {
     skip-at-startup
