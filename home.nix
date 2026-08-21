@@ -84,6 +84,11 @@
     source = ./resources/niri/awww.jpg;
   };
 
+  # Quickshell
+  home.file.".config/quickshell/shell.qml" = {
+    source = ./resources/shell.qml;
+  };
+
   # Terminal
   home.file.".config/kitty" = {
     source = ./resources/kitty;
