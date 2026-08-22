@@ -3,6 +3,8 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+
+    nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel/release"
     
     larpfetch = {
       url = "github:areofyl/fetch";
@@ -37,6 +39,7 @@
           home-manager.useUserPackages = true;
           home-manager.extraSpecialArgs = { inherit inputs; };
           home-manager.users.bartek = import ./home.nix;
+	  nixpkgs.overlays = [ nix-cachyos-kernel.overlays.default ];
         }
       ];
     };

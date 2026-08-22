@@ -12,6 +12,7 @@
   boot.loader.grub.device = "nodev";
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest;
   boot.loader.grub.extraEntries = "
     menuentry 'UEFI Firmware Settings' --id 'uefi-firmware' {
       fwsetup
