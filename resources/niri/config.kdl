@@ -122,9 +122,10 @@ binds {
 
     Mod+Shift+Slash { show-hotkey-overlay; }
 
+    Mod hotkey-overlay-title="Open the Control Center: Noctalia" { sppawn "noctalia" "msg" "panel-open" "control-center"; }
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+Space hotkey-overlay-title="Run an Application: Noctalia Launcher" { spawn "noctalia" "msg" "panel-open" "launcher"; }
-    Super+L hotkey-overlay-title="Lock the Screen: Noctalia Lockscreen" { spawn "noctalia" "msg" "session" "lock"; }
+    Mod+L hotkey-overlay-title="Lock the Screen: Noctalia Lockscreen" { spawn "noctalia" "msg" "session" "lock"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
