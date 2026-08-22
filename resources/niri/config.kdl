@@ -72,14 +72,14 @@ layout {
     // Alternatively, you can override it with a window rule called
     // `draw-border-with-background`.
 
-    focus-ring {
-        width 4
+    border {
+        width 2
 	active-color "#cba6f7"
 	inactive-color "#6c7086"
     }
 
     // You can also add a border. It's similar to the focus ring, but always visible.
-    border {
+    focus-ring {
 	off
     }
     shadow {
