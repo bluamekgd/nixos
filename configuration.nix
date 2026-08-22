@@ -80,6 +80,8 @@
   # System packages
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
+    
+    # System
     git
     wget
     curl
@@ -90,14 +92,15 @@
     usbutils
     brightnessctl
     playerctl
+
+    # Wayland + Niri shit
     libxcursor
     xwayland
-    awww
-    quickshell
     fuzzel
     wl-clipboard
     grim
     slurp
+    inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
   # Fonts
@@ -227,8 +230,11 @@
   };
 
   # Laptop power management
-  services.tlp.enable = true;
-  powerManagement.cpuFreqGovernor = "powersave";
+  services.tuned.enable = true;
+  services.upower.enable = true;
+
+  # Bluetooth (altho im co confused on if this piece of shit has it)
+  hardware.bluetooth.enable = true;
 
   # Touchpad
   services.libinput.enable = true;

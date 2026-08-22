@@ -108,8 +108,7 @@ layout {
     }
 }
 
-spawn-at-startup "quickshell"
-spawn-at-startup "awww-daemon"
+spawn-at-startup "noctalia"
 
 hotkey-overlay {
     skip-at-startup

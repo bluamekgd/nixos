@@ -7,6 +7,10 @@
   home.username = "bartek";
   home.homeDirectory = "/home/bartek";
 
+  imports = [
+    inputs.noctalia.homeModules.default
+  ];
+
   home.packages = with pkgs; [
     kitty
     samba
@@ -73,6 +77,21 @@
     x11.enable = true;
   };
 
+  # Noctalia
+  programs.noctalia = {
+    enable = true;
+    settings = {
+      theme = {
+        mode = "dark";
+	source = "builtin";
+	builtin = "Catppuccin";
+      };
+      wallpaper = {
+        enabled = true;
+	default.path = "~/.wallpaper.jpg";
+      };
+    };
+  };
 
   # Niri (todo: done ig)
   home.file.".config/niri/config.kdl" = {
@@ -80,14 +99,9 @@
     recursive = true;
   };
 
-  # awww wallpapers
-  home.file.".config/niri/awww.jpg" = {
-    source = ./resources/niri/awww.jpg;
-  };
-
-  # Quickshell
-  home.file.".config/quickshell/shell.qml" = {
-    source = ./resources/shell.qml;
+  # Wallpaper
+  home.file.".config/niri/.wallpaper.jpg" = {
+    source = ./resources/wallpaper.jpg;
   };
 
   # Terminal
