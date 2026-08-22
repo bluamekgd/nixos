@@ -32,6 +32,9 @@
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };
       modules = [
+        {
+          nixpkgs.overlays = [ inputs.nix-cachyos-kernel.overlays.pinned ];
+	}
         ./configuration.nix
         home-manager.nixosModules.home-manager
         {
@@ -39,7 +42,6 @@
           home-manager.useUserPackages = true;
           home-manager.extraSpecialArgs = { inherit inputs; };
           home-manager.users.bartek = import ./home.nix;
-	  nixpkgs.overlays = [ nix-cachyos-kernel.overlays.default ];
         }
       ];
     };
