@@ -27,6 +27,12 @@
     # Larping Tools
     fastfetch
     inputs.larpfetch.packages.${pkgs.stdenv.hostPlatform.system}.default
+    cava
+    cmatrix
+    cbonsai
+    btop
+    pipes-rs
+    tty-clock
   ];
 
   # GTK Prefer Dark
