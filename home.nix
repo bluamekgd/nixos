@@ -8,7 +8,7 @@
   home.homeDirectory = "/home/bartek";
 
   imports = [
-    inputs.noctalia.homeModules.default
+    noctalia.homeModules.default
   ];
 
   home.packages = with pkgs; [
