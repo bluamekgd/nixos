@@ -117,11 +117,6 @@
     source = ./resources/.zshrc;
   };
 
-  # Fuzzel
-  home.file.".config/fuzzel/fuzzel.ini" = {
-    source = ./resources/fuzzel.ini;
-  };
-
   # I did read the comment
   home.stateVersion = "24.11";
 }

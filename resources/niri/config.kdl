@@ -27,13 +27,7 @@ input {
 	// i dont have one
     }
 }
-// remember to un comment later
-/-output "eDP-1" {
-    mode "1366x768@60.000"
-    scale 1
-    transform "normal"
-    position x=1280 y=0
-}
+
 layout {
     // Set gaps around windows in logical pixels.
     gaps 16
@@ -174,7 +168,7 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
-    Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+    Mod+Space hotkey-overlay-title="Run an Application: Noctalia Launcher" { spawn "noctalia msg panel-open launcher"; }
     Super+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }

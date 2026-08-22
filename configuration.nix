@@ -97,7 +97,6 @@
     # Wayland + Niri shit
     libxcursor
     xwayland
-    fuzzel
     wl-clipboard
     grim
     slurp
