@@ -122,7 +122,8 @@ binds {
 
     Mod+Shift+Slash { show-hotkey-overlay; }
 
-    Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
+    Mod+S hotkey-overlay-title="Open the Control Center: Noctalia" { "noctalia" "msg" "panel-toggle" "control-center"; }
+    Mod+Return hotkey-overlay-title="Open a Terminal: Kitty" { spawn "kitty"; }
     Mod+Space hotkey-overlay-title="Run an Application: Noctalia Launcher" { spawn "noctalia" "msg" "panel-open" "launcher"; }
     Mod+L hotkey-overlay-title="Lock the Screen: Noctalia Lockscreen" { spawn "noctalia" "msg" "session" "lock"; }
 
