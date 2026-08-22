@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-    nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel/release"
+    nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel/release";
     
     larpfetch = {
       url = "github:areofyl/fetch";
