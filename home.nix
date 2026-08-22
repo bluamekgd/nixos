@@ -22,7 +22,7 @@
 
     # Larping Tools
     fastfetch
-    inputs.larpfetch.packages.${pkgs.system}.default
+    inputs.larpfetch.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
   # GTK Prefer Dark
