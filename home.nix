@@ -95,7 +95,8 @@
       wallpaper = {
         enabled = true;
 	directory = "~/Pictures/Wallpapers";
-	default.path = "/home/${config.home.username}/Pictures/Wallpapers/Cabin.jpg";
+	transition_on_startup = true;
+	automation.enabled = true;
       };
       bar.default = {
         start = [ "launcher" "workspaces" ];
