@@ -185,6 +185,7 @@
   # Wallpapers
   home.file."Pictures/Wallpapers" = {
     source = ./resources/wallpapers;
+    recursive = true;
   };
 
   # Terminal
