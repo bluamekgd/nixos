@@ -24,7 +24,7 @@ disabled = false
 style = "bg:red fg:crust"
 
 [os.symbols]
-NixOS = "PLACEHOLDER"
+NixOS = ""
 
 [username]
 show_always = true
