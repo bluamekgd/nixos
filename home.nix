@@ -180,9 +180,9 @@
     recursive = true;
   };
 
-  # Wallpaper
-  home.file."Pictues/Wallpapers/House.jpg" = {
-    source = ./resources/wallpapers/house.jpg;
+  # Wallpapers
+  home.file."Pictures/Wallpapers" = {
+    source = ./resources/wallpapers;
   };
 
   # Terminal
