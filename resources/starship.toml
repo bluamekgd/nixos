@@ -64,7 +64,7 @@ format = '[[  $time ](fg:crust bg:lavender)]($style)'
 disabled = false
 
 [character]
-disabled = true
+disabled = false
 success_symbol = '[❯](bold fg:green)'
 error_symbol = '[❯](bold fg:red)'
 
