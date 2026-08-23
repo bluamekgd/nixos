@@ -3,18 +3,18 @@
   "logo": {
     "type": "small",
     "color": {
-      "1": "white",
+      "1": "red",
       "2": "magenta",
-      "3": "white",
+      "3": "red",
       "4": "magenta",
-      "5": "white",
+      "5": "red",
       "6": "magenta"
     }
   },
   "display": {
     "color": {
-      "keys": "magenta",
-      "title": "magenta"
+      "keys": "red",
+      "title": "red"
     }
   },
   "modules": [

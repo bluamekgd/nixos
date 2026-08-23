@@ -90,7 +90,7 @@
       theme = {
         mode = "dark";
 	source = "community";
-	community_palette = "Catppuccin Mocha Mauve-Lavender";
+	community_palette = "Catppuccin Mocha Maroon";
       };
       wallpaper = {
         enabled = true;
