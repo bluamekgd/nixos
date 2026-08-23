@@ -95,6 +95,7 @@
       wallpaper = {
         enabled = true;
 	directory = "~/Pictures/Wallpapers";
+	default.path = "~/Pictures/Wallpapers/House.jpg"
       };
       bar.default = {
         start = [ "launcher" "workspaces" ];
