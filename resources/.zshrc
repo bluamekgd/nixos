@@ -109,3 +109,8 @@ alias cat='bat'
 alias unicode='kitten unicode-input'
 alias nrs='sudo nixos-rebuild switch --flake .#nixos'
 alias nrb='sudo nixos-rebuild boot --flake .#nixos'
+
+# End of aliases
+
+# Fastfetch on init + padding
+echo; fastfetch
