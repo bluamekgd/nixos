@@ -3,11 +3,11 @@
   "logo": {
     "type": "small",
     "color": {
-      "1": "red",
+      "1": "white",
       "2": "magenta",
-      "3": "red",
+      "3": "white",
       "4": "magenta",
-      "5": "red",
+      "5": "white",
       "6": "magenta"
     }
   },
