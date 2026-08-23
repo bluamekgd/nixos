@@ -97,16 +97,16 @@
 	default.path = "~/.config/niri/wallpaper.jpg";
       };
       bar.default = {
-        start = [ "launcher", "workspaces" ];
+        start = [ "launcher" "workspaces" ];
 	end = [
-          "tray",
-	  "notifications",
-	  "clipboard",
-	  "network",
-	  "bluetooth",
-	  "volume",
-	  "brightness",
-	  "battery",
+          "tray"
+	  "notifications"
+	  "clipboard"
+	  "network"
+	  "bluetooth"
+	  "volume"
+	  "brightness"
+	  "battery"
 	  "control-center"
 	];
       };
