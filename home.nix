@@ -181,7 +181,7 @@
     source = ./resources/niri/config.kdl;
     recursive = true;
   };
-
+  
   # Wallpapers
   home.file."Pictures/Wallpapers" = {
     source = ./resources/wallpapers;
