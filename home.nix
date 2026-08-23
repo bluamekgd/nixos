@@ -94,7 +94,77 @@
       };
       wallpaper = {
         enabled = true;
-	default.path = "~/.wallpaper.jpg";
+	default.path = "~/.config/niri/wallpaper.jpg";
+      };
+      bar.default = {
+        start = [ "launcher", "workspaces" ];
+	end = [
+          "tray",
+	  "notifications",
+	  "clipboard",
+	  "network",
+	  "bluetooth",
+	  "volume",
+	  "brightness",
+	  "battery",
+	  "control-center"
+	];
+      };
+      control_center.calendar.show_events_card = false;
+      desktop_widgets.enabled = false;
+      location.auto_locate = true;
+      lockscreen_widgets.enabled = false;
+      shell = {
+        font_family = "JetBrainsMonoNL NFM";
+	password_style = "random";
+	show_location = false;
+	launcher = {
+          categories = false;
+	  compact = true;
+	};
+	panel.launcher_placement = "attached";
+	screenshot = {
+          directory = "~/Pictures/Screenshots";
+	  show_cursor = true;
+	};
+	session.actions = [
+          {
+            action = "lock";
+	    countdown_seconds = 0.0;
+	    enabled = true;
+	    shortcut = "1";
+	    variant = "default";
+	  }
+	  {
+            action = "logout";
+	    countdown_seconds = 0.0;
+	    enabled = true;
+	    shortcut = "2";
+	    variant = "default";
+	  }
+	  {
+            action = "lock_and_suspend";
+	    countdown_seconds = 0.0;
+	    enabled = true;
+	    label = "Sleep";
+	    shortcut = "3";
+	    variant = "default";
+	  }
+	  {
+            action = "reboot";
+	    countdown_seconds = 0.0;
+	    enabled = true;
+	    shortcut = "4";
+	    variant = "destructive";
+	  }
+	  {
+            action = "shutdown";
+	    countdown_seconds = 0.0;
+	    enabled = true;
+	    shortcut = "5";
+	    variant = "destructive";
+	  }
+	];
       };
     };
   };
@@ -111,7 +181,7 @@
   };
 
   # Wallpaper
-  home.file.".config/niri/.wallpaper.jpg" = {
+  home.file.".config/niri/wallpaper.jpg" = {
     source = ./resources/wallpaper.jpg;
   };
 
