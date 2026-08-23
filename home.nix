@@ -99,6 +99,11 @@
     };
   };
 
+  # Fastfetch
+  home.file.".config/fastfetch/config.jsonc" = {
+    source = ./resources/fastfetch.jsonc;
+  };
+
   # Niri (todo: done ig)
   home.file.".config/niri/config.kdl" = {
     source = ./resources/niri/config.kdl;
