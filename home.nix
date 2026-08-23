@@ -94,7 +94,7 @@
       };
       wallpaper = {
         enabled = true;
-	default.path = "~/wallpaper.jpg";
+	directory = "~/Pictures/Wallpapers";
       };
       bar.default = {
         start = [ "launcher" "workspaces" ];
@@ -181,8 +181,8 @@
   };
 
   # Wallpaper
-  home.file."wallpaper.jpg" = {
-    source = ./resources/wallpaper.jpg;
+  home.file."Pictues/Wallpapers/House.jpg" = {
+    source = ./resources/wallpapers/house.jpg;
   };
 
   # Terminal
