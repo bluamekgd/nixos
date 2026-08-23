@@ -181,7 +181,7 @@
   };
 
   # Wallpaper
-  home.file.".wallpaper.jpg" = {
+  home.file."wallpaper.jpg" = {
     source = ./resources/wallpaper.jpg;
   };
 
