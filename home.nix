@@ -94,7 +94,7 @@
       };
       wallpaper = {
         enabled = true;
-	default.path = "~/.config/niri/wallpaper.jpg";
+	default.path = "~/wallpaper.jpg";
       };
       bar.default = {
         start = [ "launcher" "workspaces" ];
@@ -181,7 +181,7 @@
   };
 
   # Wallpaper
-  home.file.".config/niri/wallpaper.jpg" = {
+  home.file.".wallpaper.jpg" = {
     source = ./resources/wallpaper.jpg;
   };
 
