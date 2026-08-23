@@ -89,8 +89,8 @@
     settings = {
       theme = {
         mode = "dark";
-	source = "builtin";
-	builtin = "Catppuccin";
+	source = "community";
+	community_palette = "Catppuccin Mocha Mauve-Lavender";
       };
       wallpaper = {
         enabled = true;
