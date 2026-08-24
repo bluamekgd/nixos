@@ -99,7 +99,7 @@
 	automation.enabled = true;
       };
       bar.default = {
-        start = [ "launcher" "workspaces" ];
+        start = [ "launcher" "wallpaper" "workspaces" ];
 	end = [
           "tray"
 	  "notifications"
