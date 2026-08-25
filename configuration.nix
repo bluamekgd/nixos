@@ -148,7 +148,6 @@
   programs.niri = {
     enable = true;
     useNautilus = true;
-    xwayland.enable = true;
   };
 
   # Ly DM
