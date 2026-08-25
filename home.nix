@@ -23,7 +23,6 @@
     localsend
     vlc
     discord
-    nestopia-ue
 
     # Larping Tools
     fastfetch
