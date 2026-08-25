@@ -24,6 +24,17 @@
     vlc
     discord
 
+    # Nix Search TV
+    pkgs.writeShellApplication
+    {
+      name = "ns";
+      runtimeInputs = with pkgs; [
+        fzf
+	nix-search-tv
+      ];
+      text = builtins.readFile "${pkgs.nix-search-tv.src}/nixpkgs.sh";
+    }
+
     # Larping Tools
     fastfetch
     inputs.larpfetch.packages.${pkgs.stdenv.hostPlatform.system}.default
