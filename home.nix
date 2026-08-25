@@ -15,7 +15,7 @@
     kitty
     samba
     nautilus
-    firefox
+    librewolf
     jellyfin-desktop
     bat
     makemkv
@@ -23,7 +23,7 @@
     localsend
     vlc
     discord
-    mesen
+    nestopia-ue
 
     # Larping Tools
     fastfetch
