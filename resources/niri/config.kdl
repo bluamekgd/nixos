@@ -104,15 +104,12 @@ window-rule {
 }
 
 binds {
+    Mod+Shift+Slash   { spawn "bash" "~/.hotkey-helper.sh"; }
 
-    // WHAT THE FUCK IS THIS IM GONNA END MYSELF WITH THESE CRYPTIC KEYBINDS
-
-    Mod+Shift+Slash { show-hotkey-overlay; }
-
-    Mod+Shift+Space hotkey-overlay-title="Open the Noctalia Control Center" { spawn "noctalia" "msg" "panel-toggle" "control-center"; }
-    Mod+Return hotkey-overlay-title="Open Kitty" { spawn "kitty"; }
-    Mod+Space hotkey-overlay-title="Noctalia Launcher" { spawn "noctalia" "msg" "panel-open" "launcher"; }
-    Mod+L hotkey-overlay-title="Lockscreen" { spawn "noctalia" "msg" "session" "lock"; }
+    Mod+Shift+Space   { spawn "noctalia" "msg" "panel-toggle" "control-center"; }
+    Mod+Return        { spawn "kitty"; }
+    Mod+Space         { spawn "noctalia" "msg" "panel-open" "launcher"; }
+    Mod+L             { spawn "noctalia" "msg" "session" "lock"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }

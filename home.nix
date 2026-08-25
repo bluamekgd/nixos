@@ -182,6 +182,9 @@
     source = ./resources/niri/config.kdl;
     recursive = true;
   };
+  home.file.".hotkey-helper.sh" = {
+    source = ./resources/hotkey-helper.sh;
+  };
   
   # Wallpapers
   home.file."Pictures/Wallpapers" = {
