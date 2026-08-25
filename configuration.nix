@@ -234,8 +234,9 @@
   # Laptop power management
   services.tuned.enable = true;
   services.upower.enable = true;
+  services.logind.powerKey = "ignore";
 
-  # Bluetooth (altho im co confused on if this piece of shit has it)
+  # Bluetooth (wow it does)
   hardware.bluetooth.enable = true;
 
   # Touchpad
