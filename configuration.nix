@@ -148,6 +148,7 @@
   programs.niri = {
     enable = true;
     useNautilus = true;
+    xwayland.enable = true;
   };
 
   # Ly DM
@@ -158,7 +159,7 @@
       # Animation
       animation = "dur_file";
       dur_file_path = "/etc/ly.dur";
-      dur_x_offset = 55;
+      dur_x_offset = 60;
       dur_y_offset = -5;
       animation_timeout_sec = 0;
 
