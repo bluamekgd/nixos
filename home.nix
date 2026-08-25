@@ -23,6 +23,7 @@
     localsend
     vlc
     discord
+    mesen
 
     # Larping Tools
     fastfetch
