@@ -25,7 +25,7 @@
     discord
 
     # Nix Search TV
-    pkgs.writeShellApplication
+    (pkgs.writeShellApplication
     {
       name = "ns";
       runtimeInputs = with pkgs; [
@@ -33,7 +33,7 @@
 	nix-search-tv
       ];
       text = builtins.readFile "${pkgs.nix-search-tv.src}/nixpkgs.sh";
-    }
+    })
 
     # Larping Tools
     fastfetch
