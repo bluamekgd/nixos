@@ -179,7 +179,7 @@
 
   # Niri (todo: done ig)
   home.file.".config/niri/config.kdl" = {
-    source = ./resources/niri/config.kdl;
+    source = ./resources/niri.kdl;
     recursive = true;
   };
   
