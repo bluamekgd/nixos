@@ -139,8 +139,8 @@ binds {
 
     Mod+Down           { focus-workspace-down; }
     Mod+Up             { focus-workspace-up; }
-    Mod+Shift+Down     { move-window-to-workspace-down; }
-    Mod+Shift+Up       { move-window-to-workspace-up; }
+    Mod+Ctrl+Down     { move-window-to-workspace-down; }
+    Mod+Ctrl+Up       { move-window-to-workspace-up; }
 
     // The following binds move the focused window in and out of a column.
     // If the window is alone, they will consume it into the nearby column to the side.
