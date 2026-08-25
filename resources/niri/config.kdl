@@ -1,6 +1,8 @@
-disable-power-key-handling
-
 input {
+    
+    // FUCK YOU AND WHOEVER MADE NIRI DO SHIT WHEN I PRESS THE POWER KEY
+    disable-power-key-handling
+
     keyboard {
         xkb {
         }
@@ -26,7 +28,7 @@ input {
     }
 
     trackpoint {
-	// i dont have one
+	// i dont have one :(
     }
 }
 
