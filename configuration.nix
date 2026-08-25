@@ -234,7 +234,7 @@
   # Laptop power management
   services.tuned.enable = true;
   services.upower.enable = true;
-  services.logind.powerKey = "ignore";
+  services.logind.settings.Login.HandlePowerKey = "ignore";
 
   # Bluetooth (wow it does)
   hardware.bluetooth.enable = true;
