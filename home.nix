@@ -15,7 +15,7 @@
     kitty
     samba
     nautilus
-    librewolf
+    firefox
     jellyfin-desktop
     bat
     makemkv
