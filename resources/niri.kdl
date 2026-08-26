@@ -167,7 +167,8 @@ binds {
 
     Mod+C { center-column; }
 
-    Mod+Shift+S { spawn "noctalia" "msg" "screenshot-region"; }
+    Mod+Shift+S       { spawn "noctalia" "msg" "screenshot-region"; }
+    Mod+Ctrl+Shift+S  { spawn "noctalia" "msg" "screenshot-fullscreen"; }
 
     Mod+Alt+Left  { set-column-width "-10%"; }
     Mod+Alt+Right { set-column-width "+10%"; }
