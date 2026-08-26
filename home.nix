@@ -23,6 +23,8 @@
     localsend
     vlc
     discord
+    gimp
+    gwenview
 
     # Nix Search TV
     (pkgs.writeShellApplication
