@@ -24,7 +24,7 @@
     vlc
     discord
     gimp
-    kdePackages.gwenview
+    loupe
 
     # Nix Search TV
     (pkgs.writeShellApplication
