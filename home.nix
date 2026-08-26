@@ -95,7 +95,9 @@
   };
 
   # Noctalia
-  home.file.".face.png".source = ./resources/face.png;
+  home.file.".face.png" = {
+    source = ./resources/face.png;
+  };
 
   programs.noctalia = {
     enable = true;
