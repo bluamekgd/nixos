@@ -70,8 +70,11 @@
   # XDG Portal (like the game? (I DID A 10:00.7 IN OOB BRO I HATE THIS GAME))
   xdg.portal = {
     enable = true;
-    extraPortals = [pkgs.xdg-desktop-portal-gtk];
-    config.common.default = "*";
+    extraPortals = [
+      pkgs.xdg-desktop-portal-gtk
+      pkgs.xdg-desktop-portal-gnome
+    ];
+    config.niri.default = [ "gnome" "gtk" ];
   };
 
   # zsh
