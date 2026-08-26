@@ -95,6 +95,8 @@
   };
 
   # Noctalia
+  home.file.".face.png".source = ./resources/face.png;
+
   programs.noctalia = {
     enable = true;
     settings = {
@@ -109,6 +111,7 @@
 	transition_on_startup = true;
 	automation.enabled = true;
       };
+      
       bar.default = {
         start = [ "launcher" "wallpaper" "workspaces" ];
 	end = [
@@ -128,6 +131,7 @@
       location.auto_locate = true;
       lockscreen_widgets.enabled = false;
       shell = {
+        avatar_path = "/home/${config.home.username}/.face.png"
         font_family = "JetBrainsMonoNL NFM";
 	password_style = "random";
 	show_location = false;
