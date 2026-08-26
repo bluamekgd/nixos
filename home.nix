@@ -134,6 +134,21 @@
       desktop_widgets.enabled = false;
       location.auto_locate = true;
       lockscreen_widgets.enabled = false;
+      idle = {
+        behavior_order = [ "lock" "lock-and-suspend" ];
+	behavior = {
+	  lock = {
+            action = "lock";
+	    enabled = true;
+  	    timeout = 600.0;
+	  };
+	  lock-and-suspend = {
+            action = "lock_and_suspend";
+	    enabled = true;
+	    timeout = 900.0;
+	  };
+	};
+      };
       shell = {
         avatar_path = "/home/${config.home.username}/.face.png";
         font_family = "JetBrainsMonoNL NFM";
