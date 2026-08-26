@@ -133,7 +133,7 @@
       location.auto_locate = true;
       lockscreen_widgets.enabled = false;
       shell = {
-        avatar_path = "/home/${config.home.username}/.face.png"
+        avatar_path = "/home/${config.home.username}/.face.png";
         font_family = "JetBrainsMonoNL NFM";
 	password_style = "random";
 	show_location = false;
