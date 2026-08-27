@@ -190,11 +190,18 @@
     };
   };
 
-  # Permission fix for greeter profile picture
-  systemd.tmpfiles.rules = [
-    "a+ /home/bartek - - - - user:greeter:--x"
-    "a+ /home/bartek/.face - - - - user:greeter:r--"
-  ];
+  # Greeter avatar, served entirely outside $HOME — no ACLs on
+  # /home/bartek needed, no tmpfiles hack, nothing for `greeter`
+  # to traverse.
+  system.activationScripts.greeterAvatar = ''
+    mkdir -p /var/lib/AccountsService/icons /var/lib/AccountsService/users
+    install -m 0644 ${./resources/face.png} /var/lib/AccountsService/icons/bartek
+    cat > /var/lib/AccountsService/users/bartek <<'EOF'
+  [User]
+  Icon=/var/lib/AccountsService/icons/bartek
+  SystemAccount=false
+  EOF
+  '';
 
   # Wayland env vars
   environment.sessionVariables = {
