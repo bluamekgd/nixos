@@ -98,7 +98,7 @@
 
   # Noctalia
   home.file.".face" = {
-    source = ./resources/face;
+    source = ./resources/face.png;
   };
 
   programs.noctalia = {
