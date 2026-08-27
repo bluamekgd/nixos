@@ -192,7 +192,8 @@
 
   # Permission fix for greeter profile picture
   systemd.tmpfiles.rules = [
-    "a+ /home/bartek - greeter:x"
+    "a+ /home/bartek - - - - user:greeter:--x"
+    "a+ /home/bartek/.face - - - - user:greeter:r--"
   ];
 
   # Wayland env vars
