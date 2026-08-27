@@ -82,6 +82,16 @@
     config.niri.default = [ "gnome" "gtk" ];
   };
 
+  # Polkit exception for Noctalia
+  security.polkit.extraConfig = ''
+    polkit.addRule(function(action, subject) {
+      if (action.id == "org.noctalia.greeter.apply-appearance" &&
+          subject.isInGroup("wheel")) {
+        return polkit.Result.YES;
+      }
+    });
+  '';
+
   # zsh
   programs.zsh.enable = true;
 

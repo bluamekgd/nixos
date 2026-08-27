@@ -156,7 +156,7 @@
 	show_location = false;
 	greeter_sync = {
           auto_sync = true;
-	  privilege_command = "kitty pkexec";
+	  privilege_command = "pkexec";
 	};
 	launcher = {
           categories = false;
