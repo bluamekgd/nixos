@@ -154,6 +154,10 @@
         font_family = "JetBrainsMonoNL NFM";
 	password_style = "random";
 	show_location = false;
+	greeter_sync = {
+          auto_sync = true;
+	  privilege_command = "kitty pkexec";
+	};
 	launcher = {
           categories = false;
 	  compact = true;
