@@ -97,10 +97,6 @@
   };
 
   # Noctalia
-  home.file.".face" = {
-    source = ./resources/face.png;
-  };
-
   programs.noctalia = {
     enable = true;
     settings = {
@@ -150,7 +146,7 @@
 	};
       };
       shell = {
-        avatar_path = "/home/${config.home.username}/.face";
+        avatar_path = "/var/lib/AccountsService/icons/${home.username}";
         font_family = "JetBrainsMonoNL NFM";
 	password_style = "random";
 	show_location = false;
