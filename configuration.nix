@@ -8,7 +8,7 @@
 
   imports = [
     ./hardware-configuration.nix
-    inputs.noctalia.homeModules.default
+    inputs.noctalia-greeter.homeModules.default
   ];
 
   # Bootloader
