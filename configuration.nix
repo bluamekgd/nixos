@@ -173,9 +173,13 @@
     enable = true;
     greeter-args = "";
     settings = {
+      appearance = {
+        password_style = "random";
+	hide_logo = true;
+      };
       cursor = {
         theme = "Bibata-Modern-Classic";
-	size = 20;
+	size = 22;
 	path = "${pkgs.bibata-cursors}/share/icons";
       };
       session.default = "niri";
