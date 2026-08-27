@@ -190,6 +190,11 @@
     };
   };
 
+  # Permission fix for greeter profile picture
+  systemd.tmpfiles.rules = [
+    "a+ /home/bartek - greeter:x"
+  ];
+
   # Wayland env vars
   environment.sessionVariables = {
     WLR_NO_HARDWARE_CURSORS = "1";
