@@ -146,7 +146,7 @@
 	};
       };
       shell = {
-        avatar_path = "/var/lib/AccountsService/icons/${home.username}";
+        avatar_path = "/var/lib/AccountsService/icons/${config.home.username}";
         font_family = "JetBrainsMonoNL NFM";
 	password_style = "random";
 	show_location = false;
