@@ -4,7 +4,12 @@
   pkgs,
   ...
 }: {
-  imports = [./hardware-configuration.nix];
+
+
+  imports = [
+    ./hardware-configuration.nix
+    inputs.noctalia.homeModules.default
+  ];
 
   # Bootloader
   boot.loader.grub.enable = true;
@@ -153,80 +158,95 @@
     useNautilus = true;
   };
 
-  # Ly DM
-  environment.etc."ly.dur".source = ./resources/ly.dur;
-  services.displayManager.ly = {
+  # Noctalia Greeter
+  programs.noctalia-greeter = {
     enable = true;
+    greeter-args = "";
     settings = {
-      # Animation
-      animation = "dur_file";
-      dur_file_path = "/etc/ly.dur";
-      dur_x_offset = 60;
-      dur_y_offset = -5;
-      animation_timeout_sec = 0;
-
-      # Clock / big clock
-      bigclock = "en";
-      bigclock_12hr = false;
-      bigclock_seconds = false;
-
-      # Brightness keys
-      brightness_down_cmd = "${pkgs.brightnessctl}/bin/brightnessctl -q -n s 10%-";
-      brightness_down_key = "F5";
-      brightness_up_cmd = "${pkgs.brightnessctl}/bin/brightnessctl -q -n s +10%";
-      brightness_up_key = "F6";
-
-      # Appearance
-      bg = "0x00000000";
-      fg = "0x00FFFFFF";
-      border_fg = "0x00FFFFFF";
-      error_bg = "0x00000000";
-      error_fg = "0x01FF0000";
-      blank_box = true;
-      hide_borders = false;
-      hide_key_hints = false;
-      hide_keyboard_locks = true;
-      hide_version_string = true;
-      text_in_center = false;
-      full_color = true;
-      edge_margin = 0;
-
-      # Input
-      input_len = 34;
-      default_input = "password";
-      asterisk = "*";
-      clear_password = true;
-      allow_empty_password = false;
-
-      # Auth / session
-      auth_fails = 10;
-      save = true;
-      service_name = "ly";
-      numlock = true;
-
-      # Battery
-      battery_id = "BAT1";
-
-      # Power keys
-      shutdown_cmd = "/run/current-system/sw/bin/systemctl poweroff";
-      shutdown_key = "F1";
-      restart_cmd = "/run/current-system/sw/bin/systemctl reboot";
-      restart_key = "F2";
-      sleep_key = "F3";
-      sleep_cmd = "/run/current-system/sw/bin/systemctl suspend";
-      hibernate_key = "F4";
-      hibernate_cmd = "/run/current-system/sw/bin/systemctl hibernate";
-
-      # Margins
-      margin_box_h = 2;
-      margin_box_v = 1;
-
-      # Misc
-      lang = "en";
-      min_refresh_delta = 5;
-      session_log = ".local/state/ly-session.log";
+      cursor = {
+        theme = "Bibata-Modern-Classic";
+	size = 20;
+	path = "${pkgs.bibata-cursors}/share/icons";
+      };
+      session.default = "niri";
+      keyboard.layout = "us";
     };
   };
+
+  # Ly DM
+  # environment.etc."ly.dur".source = ./resources/ly.dur;
+  # services.displayManager.ly = {
+  #   enable = true;
+  #   settings = {
+  #     # Animation
+  #     animation = "dur_file";
+  #     dur_file_path = "/etc/ly.dur";
+  #     dur_x_offset = 60;
+  #     dur_y_offset = -5;
+  #     animation_timeout_sec = 0;
+  #
+  #     # Clock / big clock
+  #     bigclock = "en";
+  #     bigclock_12hr = false;
+  #     bigclock_seconds = false;
+  #
+  #     # Brightness keys
+  #     brightness_down_cmd = "${pkgs.brightnessctl}/bin/brightnessctl -q -n s 10%-";
+  #     brightness_down_key = "F5";
+  #     brightness_up_cmd = "${pkgs.brightnessctl}/bin/brightnessctl -q -n s +10%";
+  #     brightness_up_key = "F6";
+  #
+  #     # Appearance
+  #     bg = "0x00000000";
+  #     fg = "0x00FFFFFF";
+  #     border_fg = "0x00FFFFFF";
+  #     error_bg = "0x00000000";
+  #     error_fg = "0x01FF0000";
+  #     blank_box = true;
+  #     hide_borders = false;
+  #     hide_key_hints = false;
+  #     hide_keyboard_locks = true;
+  #     hide_version_string = true;
+  #     text_in_center = false;
+  #     full_color = true;
+  #     edge_margin = 0;
+  #
+  #     # Input
+  #     input_len = 34;
+  #     default_input = "password";
+  #     asterisk = "*";
+  #     clear_password = true;
+  #     allow_empty_password = false;
+  #
+  #     # Auth / session
+  #     auth_fails = 10;
+  #     save = true;
+  #     service_name = "ly";
+  #     numlock = true;
+  #
+  #     # Battery
+  #     battery_id = "BAT1";
+  #
+  #     # Power keys
+  #     shutdown_cmd = "/run/current-system/sw/bin/systemctl poweroff";
+  #     shutdown_key = "F1";
+  #     restart_cmd = "/run/current-system/sw/bin/systemctl reboot";
+  #     restart_key = "F2";
+  #     sleep_key = "F3";
+  #     sleep_cmd = "/run/current-system/sw/bin/systemctl suspend";
+  #     hibernate_key = "F4";
+  #     hibernate_cmd = "/run/current-system/sw/bin/systemctl hibernate";
+  #
+  #     # Margins
+  #     margin_box_h = 2;
+  #     margin_box_v = 1;
+  #
+  #     # Misc
+  #     lang = "en";
+  #     min_refresh_delta = 5;
+  #     session_log = ".local/state/ly-session.log";
+  #   };
+  # };
 
   # Wayland env vars
   environment.sessionVariables = {
