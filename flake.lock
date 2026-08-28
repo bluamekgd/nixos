@@ -168,8 +168,7 @@
         "larpfetch": "larpfetch",
         "nix-cachyos-kernel": "nix-cachyos-kernel",
         "nixpkgs": "nixpkgs_2",
-        "noctalia": "noctalia",
-        "noctalia-greeter": "noctalia-greeter"
+        "noctalia": "noctalia"
       }
     }
   },
