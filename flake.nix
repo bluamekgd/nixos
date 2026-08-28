@@ -17,7 +17,7 @@
     };
 
     noctalia-greeter = {
-      url = "github:noctalia-dev/noctalia-greeter";
+      url = "github:BluamekGD/noctalia-greeter";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     
