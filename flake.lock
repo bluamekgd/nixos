@@ -162,13 +162,34 @@
         "type": "github"
       }
     },
+    "noctalia-greeter": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1787948938,
+        "narHash": "sha256-MuumZ01lRx3JfAd9lPfCi3louWjihoLpSi24P/xl1gk=",
+        "owner": "BluamekGD",
+        "repo": "noctalia-greeter",
+        "rev": "07a2d9fe044ed4cdb334c36ec5ac948d82524a04",
+        "type": "github"
+      },
+      "original": {
+        "owner": "BluamekGD",
+        "repo": "noctalia-greeter",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
         "larpfetch": "larpfetch",
         "nix-cachyos-kernel": "nix-cachyos-kernel",
         "nixpkgs": "nixpkgs_2",
-        "noctalia": "noctalia"
+        "noctalia": "noctalia",
+        "noctalia-greeter": "noctalia-greeter"
       }
     }
   },
