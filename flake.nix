@@ -21,6 +21,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     
+    arkenfox = {
+      url = "github:arkenfox/user.js"
+      flake = false;
+    };
+
+    nur = {
+      url = "github:nix-community/nur";
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";

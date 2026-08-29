@@ -9,13 +9,13 @@
 
   imports = [
     inputs.noctalia.homeModules.default
+    ./apps/firefox.nix
   ];
 
   home.packages = with pkgs; [
     kitty
     samba
     nautilus
-    firefox
     jellyfin-desktop
     bat
     makemkv
