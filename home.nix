@@ -26,6 +26,9 @@
     gimp
     loupe
 
+    # FUCK YOU FIREFOX DL MANAGER
+    motrix-next
+
     # Nix Search TV
     (pkgs.writeShellApplication
     {
