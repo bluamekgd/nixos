@@ -15,6 +15,7 @@
   home.packages = with pkgs; [
     kitty
     samba
+    firefox
     nautilus
     jellyfin-desktop
     bat
