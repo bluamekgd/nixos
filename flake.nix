@@ -22,7 +22,7 @@
     };
     
     arkenfox = {
-      url = "github:arkenfox/user.js"
+      url = "github:arkenfox/user.js";
       flake = false;
     };
 
