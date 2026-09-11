@@ -101,8 +101,6 @@ PROMPT='$('/etc/profiles/per-user/bartek/bin/starship' prompt --terminal-width="
 RPROMPT='$('/etc/profiles/per-user/bartek/bin/starship' prompt --right --terminal-width="$COLUMNS" --keymap="${KEYMAP:-}" --status="${STARSHIP_CMD_STATUS:-}" --pipestatus="${STARSHIP_PIPE_STATUS[*]:-}" --cmd-duration="${STARSHIP_DURATION:-}" --jobs="$STARSHIP_JOBS_COUNT")'
 PROMPT2="$(/etc/profiles/per-user/bartek/bin/starship prompt --continuation)"
 
-### End of starship prompt init
-
 # Aliases
 alias img='kitten icat'
 alias cat='bat'
@@ -111,7 +109,4 @@ alias nrs='sudo nixos-rebuild switch --flake .#nixos'
 alias nrb='sudo nixos-rebuild boot --flake .#nixos'
 alias quit='exit'
 
-# End of aliases
-
-# Fastfetch on init + padding
 echo; fastfetch
