@@ -12,6 +12,7 @@
   ];
 
   home.packages = with pkgs; [
+    inputs.pretty-ls.packages.${pkgs.stdenv.hostPlatform.system}.default
     kitty
     samba
     firefox

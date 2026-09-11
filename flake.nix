@@ -6,6 +6,10 @@
 
     nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel/release";
     
+    pretty-ls = {
+      url = "github:BluamekGD/pretty-ls";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     larpfetch = {
       url = "github:areofyl/fetch";
       inputs.nixpkgs.follows = "nixpkgs";
