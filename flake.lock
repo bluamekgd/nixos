@@ -200,27 +200,6 @@
         "type": "github"
       }
     },
-    "pretty-ls": {
-      "inputs": {
-        "flake-utils": "flake-utils",
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1789240070,
-        "narHash": "sha256-nQRbwlRVCcXvA2mb9KlVeo2g9ybzUJ/bNmkWfmp22m0=",
-        "owner": "BluamekGD",
-        "repo": "pretty-ls",
-        "rev": "c9dff1452906fabcf68f6843e3e782a646991ef5",
-        "type": "github"
-      },
-      "original": {
-        "owner": "BluamekGD",
-        "repo": "pretty-ls",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
@@ -228,8 +207,7 @@
         "nix-cachyos-kernel": "nix-cachyos-kernel",
         "nixpkgs": "nixpkgs_2",
         "noctalia": "noctalia",
-        "noctalia-greeter": "noctalia-greeter",
-        "pretty-ls": "pretty-ls"
+        "noctalia-greeter": "noctalia-greeter"
       }
     },
     "systems": {
