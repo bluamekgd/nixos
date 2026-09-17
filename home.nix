@@ -101,6 +101,12 @@
   };
 
   # Noctalia
+
+  home.file.".local/share/applications/dev.noctalia.Noctalia.desktop".text = ''
+    [Desktop Entry]
+    Hidden=true
+  '';
+
   programs.noctalia = {
     enable = true;
     settings = {
@@ -118,8 +124,8 @@
       
       bar.default = {
         start = [ "launcher" "wallpaper" "workspaces" ];
+	center = [ "clock" "tray" ];
 	end = [
-          "tray"
 	  "notifications"
 	  "clipboard"
 	  "network"
@@ -130,6 +136,9 @@
 	  "control-center"
 	];
       };
+
+      widget.tray.drawer = true;
+
       control_center.calendar.show_events_card = false;
       desktop_widgets.enabled = false;
       location.auto_locate = true;
