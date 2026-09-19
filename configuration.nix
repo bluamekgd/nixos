@@ -21,7 +21,7 @@
   boot.kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest;
   boot.plymouth = {
     enable = true;
-    theme = "solar";
+    theme = "spinner";
   };
   boot.consoleLogLevel = 3;
   boot.initrd.verbose = false;
