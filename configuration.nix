@@ -93,10 +93,15 @@
   };
 
   # Polkit exception for Noctalia
-  security.polkit.extraConfig = ''
+  security.polkit.extraConfig = let
+  helper = inputs.noctalia-greeter.packages.${pkgs.stdenv.hostPlatform.system}.default;
+  in ''
     polkit.addRule(function(action, subject) {
-      if (action.id == "org.noctalia.greeter.apply-appearance" &&
-          subject.isInGroup("wheel")) {
+      if (action.id == "org.noctalia.greeter.sync-appearance" &&
+          action.lookup("program") == "${helper}/bin/noctalia-greeter-apply-appearance" &&
+          action.lookup("user") == "root" &&
+          subject.local && subject.active &&
+          subject.user == "bartek") {
         return polkit.Result.YES;
       }
     });
@@ -231,9 +236,6 @@
 
   # Touchpad
   services.libinput.enable = true;
-
-  # SSH
-  services.openssh.enable = true;
 
   # Samba client
   services.gvfs.enable = true;
