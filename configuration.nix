@@ -12,29 +12,28 @@
   ];
 
   # Bootloader
-  boot.loader.grub.enable = true;
-  boot.loader.grub.efiSupport = true;
-  boot.loader.grub.device = "nodev";
-  boot.loader.timeout = 2;
-  boot.loader.efi.efiSysMountPoint = "/boot/efi";
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest;
-  boot.plymouth = {
-    enable = true;
-    theme = "spinner";
+  boot = {
+    loader.grub.enable = true;
+    loader.grub.efiSupport = true;
+    loader.grub.device = "nodev";
+    loader.timeout = 2;
+    loader.efi.efiSysMountPoint = "/boot/efi";
+    loader.efi.canTouchEfiVariables = true;
+    kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest;
+    plymouth.enable = true;
+    consoleLogLevel = 3;
+    initrd.verbose = false;
+    kernelParams = [
+      "quiet"
+      "rd.udev.log_level=3"
+      "rd.systemd.show_status=auto"
+    ];
+    loader.grub.extraEntries = "
+      menuentry 'UEFI Firmware Settings' --id 'uefi-firmware' {
+        fwsetup
+      }
+    ";
   };
-  boot.consoleLogLevel = 3;
-  boot.initrd.verbose = false;
-  boot.kernelParams = [
-    "quiet"
-    "rd.udev.log_level=3"
-    "rd.systemd.show_status=auto"
-  ];
-  boot.loader.grub.extraEntries = "
-    menuentry 'UEFI Firmware Settings' --id 'uefi-firmware' {
-      fwsetup
-    }
-  ";
 
   # Maybe not
 
