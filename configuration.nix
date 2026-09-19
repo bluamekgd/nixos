@@ -19,6 +19,7 @@
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest;
+  services.plymouth.enable = true;
   boot.loader.grub.extraEntries = "
     menuentry 'UEFI Firmware Settings' --id 'uefi-firmware' {
       fwsetup
