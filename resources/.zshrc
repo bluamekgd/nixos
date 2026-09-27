@@ -108,5 +108,6 @@ alias unicode='kitten unicode-input'
 alias nrs='sudo nixos-rebuild switch --flake .#nixos'
 alias nrb='sudo nixos-rebuild boot --flake .#nixos'
 alias quit='exit'
+alias ngc='sudo nix-env --delete-generations old && sudo nix-collect-garbage -d'
 
 echo; fastfetch
