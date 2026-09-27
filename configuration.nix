@@ -89,7 +89,7 @@
       pkgs.xdg-desktop-portal-gtk
       pkgs.xdg-desktop-portal-gnome
     ];
-    config.niri.default = [ "gnome" "gtk" ];
+    config.hyprland.default = [ "gnome" "gtk" ];
   };
 
   # Polkit exception for Noctalia
@@ -130,7 +130,7 @@
     brightnessctl
     playerctl
 
-    # Wayland + Niri shit
+    # Wayland + Hyprland shit
     libxcursor
     xwayland
     wl-clipboard
@@ -178,10 +178,10 @@
     pulse.enable = true;
   };
 
-  # Niri
-  programs.niri = {
+  # Hyprland
+  programs.hyprland = {
     enable = true;
-    useNautilus = true;
+    xwayland.enable = true;
   };
 
   # Noctalia Greeter
@@ -201,7 +201,7 @@
 	path = "${pkgs.bibata-cursors}/share/icons";
       };
 
-      session.default = "niri";
+      session.default = "hyprland";
       keyboard.layout = "us";
     };
   };

@@ -238,12 +238,6 @@
     source = ./resources/fastfetch.jsonc;
   };
 
-  # Niri (todo: done ig)
-  home.file.".config/niri/config.kdl" = {
-    source = ./resources/niri.kdl;
-    recursive = true;
-  };
-  
   # Wallpapers
   home.file."Pictures/Wallpapers" = {
     source = ./resources/wallpapers;
