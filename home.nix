@@ -26,6 +26,8 @@
     discord
     gimp
     loupe
+    # wanna test out how this guy works
+    streamcontroller
 
     # FUCK YOU FIREFOX DL MANAGER
     motrix-next
