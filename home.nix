@@ -13,7 +13,7 @@
 
   home.packages = with pkgs; [
     inputs.pretty-ls.packages.${pkgs.stdenv.hostPlatform.system}.default
-    kitty
+    bitwarden-desktop
     samba
     firefox
     nautilus
@@ -226,6 +226,7 @@
 	    countdown_seconds = 0.0;
 	    enabled = true;
 	    shortcut = "5";
+	    command = "command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'";
 	    variant = "destructive";
 	  }
 	];
@@ -296,7 +297,6 @@
       window_padding_width = "5 10";
       confirm_os_window_close = 0;
       background_opacity = 0.5;
-      background_blur = 64;
       hide_window_decorations = true;
       tab_bar_style = "hidden";
     };
