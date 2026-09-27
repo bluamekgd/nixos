@@ -185,7 +185,7 @@
   };
 
   # Noctalia Greeter
-  programs.noctalia-greeter = {
+  services.displayManager.noctalia-greeter = {
     enable = true;
     greeter-args = "";
 
