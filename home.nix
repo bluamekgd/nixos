@@ -54,44 +54,6 @@
     tty-clock
   ];
 
-  # GTK Prefer Dark
-  dconf.settings = {
-    "org/gnome/desktop/interface" = {
-      color-scheme = "prefer-dark";
-    };
-  };
-
-  # Main config for GTK2/3/4 assets
-  gtk = {
-    enable = true;
-
-    # Old NixOS thing
-    gtk4.theme = config.gtk.theme;
-
-    theme = {
-      name = "Gruvbox-Dark";
-      package = pkgs.gruvbox-dark-gtk;
-    };
-
-    iconTheme = {
-      name = "Gruvbox-Plus-Dark";
-      package = pkgs.gruvbox-plus-icons;
-    };
-
-    # Fallback :))))))))))
-    gtk2.extraConfig = "
-      gtk-application-prefer-dark-theme = 1
-    ";
-    gtk3.extraConfig = {
-      gtk-application-prefer-dark-theme = 1;
-    };
-  };
-
-  # Libadwaita hell
-  xdg.configFile."gtk-4.0/assets".source = "${pkgs.gruvbox-dark-gtk}/share/themes/Gruvbox-Dark/gtk-4.0/assets";
-  xdg.configFile."gtk-4.0/gtk.css".source = "${pkgs.gruvbox-dark-gtk}/share/themes/Gruvbox-Dark/gtk-4.0/gtk.css";
-  xdg.configFile."gtk-4.0/gtk-dark.css".source = "${pkgs.gruvbox-dark-gtk}/share/themes/Gruvbox-Dark/gtk-4.0/gtk-dark.css";
-
   # Cursor
   home.pointerCursor = {
     enable = true;
@@ -103,7 +65,6 @@
   };
 
   # Noctalia
-
   home.file.".local/share/applications/dev.noctalia.Noctalia.desktop".text = ''
     [Desktop Entry]
     Hidden=true
