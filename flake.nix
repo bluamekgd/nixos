@@ -10,8 +10,14 @@
       url = "github:BluamekGD/pretty-ls";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
     larpfetch = {
       url = "github:areofyl/fetch";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    catppuccin = {
+      url = "github:catppuccin/nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     

@@ -9,6 +9,7 @@
 
   imports = [
     inputs.noctalia.homeModules.default
+    inputs.catppuccin.homeModules.catppuccin
   ];
 
   home.packages = with pkgs; [
@@ -53,6 +54,31 @@
     pipes-rs
     tty-clock
   ];
+
+  # GTK, libadwaita and Qt theme
+  catppuccin = {
+    kvantum.enable = true;
+    flavor = "mocha";
+    accent = "mauve";
+  };
+
+  gtk4.theme = config.gtk.theme;
+
+  gtk.theme = {
+    name = "Colloid-Purple-Dark-Catppuccin";
+    package = pkgs.colloid-gtk-theme.override {
+      themeVariants = [ "purple" ];
+      colorVariants = [ "dark" ];
+      sizeVariants = [ "standard" ];
+      tweaks = [ "catppuccin" ];
+    };
+  };
+
+  qt = {
+    enable = true;
+    platformTheme.name = "kvantum";
+    style.name = "kvantum";
+  };
 
   # Cursor
   home.pointerCursor = {
