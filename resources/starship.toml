@@ -65,8 +65,8 @@ disabled = false
 
 [character]
 disabled = false
-success_symbol = '╰[❯](bold fg:green)'
-error_symbol = '╰[❯](bold fg:red)'
+success_symbol = ' ╰[❯](bold fg:green)'
+error_symbol = ' ╰[❯](bold fg:red)'
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
