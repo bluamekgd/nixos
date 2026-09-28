@@ -180,13 +180,6 @@
           categories = false;
 	  compact = true;
 	};
-	panel = {
-	  launcher_placement = "floating";
-          control_center_placement = "floating";
-          session_placement = "floating";
-	  transparency_mode = "glass";
-	  wallpaper_placement = "floating";
-	};
 	screenshot = {
           directory = "~/Pictures/Screenshots";
 	  show_cursor = true;
