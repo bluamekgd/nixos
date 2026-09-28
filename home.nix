@@ -62,15 +62,16 @@
     accent = "mauve";
   };
 
-  gtk4.theme = config.gtk.theme;
-
-  gtk.theme = {
-    name = "Colloid-Purple-Dark-Catppuccin";
-    package = pkgs.colloid-gtk-theme.override {
-      themeVariants = [ "purple" ];
-      colorVariants = [ "dark" ];
-      sizeVariants = [ "standard" ];
-      tweaks = [ "catppuccin" ];
+  gtk = {
+    gtk4.theme = config.gtk.theme;
+    theme = {
+      name = "Colloid-Purple-Dark-Catppuccin";
+      package = pkgs.colloid-gtk-theme.override {
+        themeVariants = [ "purple" ];
+        colorVariants = [ "dark" ];
+        sizeVariants = [ "standard" ];
+        tweaks = [ "catppuccin" ];
+      };
     };
   };
 
