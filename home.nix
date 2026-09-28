@@ -27,8 +27,6 @@
     discord
     gimp
     loupe
-    # wanna test out how this guy works
-    streamcontroller
 
     # FUCK YOU FIREFOX DL MANAGER
     motrix-next
@@ -57,6 +55,8 @@
 
   # GTK, libadwaita and Qt theme
   catppuccin = {
+    enable = true;
+    autoEnable = false;
     kvantum.enable = true;
     flavor = "mocha";
     accent = "mauve";
