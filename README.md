@@ -1,6 +1,6 @@
 > "The N in NixOS stands for No More Distrohopping"
 >
-> -[*/home/tsukasa* on TikTok](https://vm.tiktok.com/ZN8rSqrue/)
+> -[*/home/tsukasa* on TikTok](https://www.tiktok.com/@linuxuser67/video/7669439511494921492)
 
 # NixOS
 
