@@ -59,7 +59,7 @@
     autoEnable = false;
     kvantum.enable = true;
     flavor = "mocha";
-    accent = "mauve";
+    accent = "maroon";
   };
 
   gtk = {
