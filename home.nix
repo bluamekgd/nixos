@@ -287,7 +287,6 @@
     };
     shellIntegration = {
       mode = null;
-      enableZshIntegration = true;
     };
   };
 
