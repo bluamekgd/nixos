@@ -284,8 +284,10 @@
       background_opacity = 0.5;
       hide_window_decorations = true;
       tab_bar_style = "hidden";
-      shell_integration = "disabled";
     };
+
+    # Whoever thought no-rc was a good default, please go to your local church and confess your sin.
+    shellIntegration.mode = "enabled";
   };
 
   programs.starship.enable = true;
