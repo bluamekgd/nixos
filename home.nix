@@ -284,6 +284,7 @@
       background_opacity = 0.5;
       hide_window_decorations = true;
       tab_bar_style = "hidden";
+      shell_integration = "disabled";
     };
   };
 
