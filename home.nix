@@ -285,7 +285,10 @@
       hide_window_decorations = true;
       tab_bar_style = "hidden";
     };
-    shellIntegration.enableZshIntegration = true;
+    shellIntegration = {
+      mode = null;
+      enableZshIntegration = true;
+    };
   };
 
   programs.starship.enable = true;
