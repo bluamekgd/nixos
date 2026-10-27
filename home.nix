@@ -49,6 +49,7 @@
     kvantum.enable = true;
     flavor = "mocha";
     accent = "maroon";
+    gtk.icon.enable = true;
   };
 
   gtk = {
