@@ -285,9 +285,7 @@
       hide_window_decorations = true;
       tab_bar_style = "hidden";
     };
-
-    # Whoever thought no-rc was a good default, please go to your local church and confess your sin.
-    shellIntegration.mode = "enabled";
+    shellIntegration.enableZshIntegration = true;
   };
 
   programs.starship.enable = true;
