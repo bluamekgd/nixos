@@ -4,7 +4,7 @@
 
 # NixOS
 
-A Niri + Noctalia Setup with a Catppuccin Theme
+A Hyprland + Noctalia Setup with a Catppuccin Theme
 
 Wallpapers from [here](https://files.orangc.net/media/walls-catppuccin-mocha/)!
 
