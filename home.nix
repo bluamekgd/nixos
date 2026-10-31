@@ -49,7 +49,6 @@
     kvantum.enable = true;
     flavor = "mocha";
     accent = "maroon";
-    gtk.icon.enable = true;
   };
 
   gtk = {
@@ -179,6 +178,7 @@
 	    countdown_seconds = 0.0;
 	    enabled = true;
 	    shortcut = "2";
+	    command = "command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'";
 	    variant = "default";
 	  }
 	  {
@@ -201,7 +201,6 @@
 	    countdown_seconds = 0.0;
 	    enabled = true;
 	    shortcut = "5";
-	    command = "command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'";
 	    variant = "destructive";
 	  }
 	];
