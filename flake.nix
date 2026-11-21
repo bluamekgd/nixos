@@ -35,6 +35,7 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nvim.url = "git+https://git.voidarc.co.uk/voidarc/nvim";
   };
   
   outputs = {

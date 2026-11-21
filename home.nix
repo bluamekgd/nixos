@@ -12,12 +12,18 @@
     inputs.catppuccin.homeModules.catppuccin
   ];
 
+  programs.neovim = {
+    enable = true;
+    package = inputs.nvim.packages.${pkgs.stdenv.hostPlatform.system}.default;
+  };
+
   home.packages = with pkgs; [
     inputs.pretty-ls.packages.${pkgs.stdenv.hostPlatform.system}.default
     bitwarden-desktop
     samba
     firefox
-    nautilus
+    nemo
+    ripgrep
     jellyfin-desktop
     bat
     makemkv
